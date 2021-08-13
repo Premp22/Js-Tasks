@@ -1,13 +1,8 @@
-
 //worked in console
-let check=(n)=>{
-let guss=prompt("enter a num");
-if(n==guss)
-{
+let n = Math.ceil(Math.random() * 10);
+let guss = prompt("enter a num");
+if (n == guss) {
 	console.log("Good Work");
-}
-else{
+} else {
 	console.log("Not Matched");
 }
-}
-check(5);
