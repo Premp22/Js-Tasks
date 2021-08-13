@@ -1,23 +1,12 @@
-let vowel = (s) => {
-	var count = 0;
-	var i = 0;
-	while (s[i] != "/0") {
-		if (
-			s[i] == "a" ||
-			s[i] == "A" ||
-			s[i] == "e" ||
-			s[i] == "E" ||
-			s[i] == "i" ||
-			s[i] == "I" ||
-			s[i] == "o" ||
-			s[i] == "O" ||
-			s[i] == "u" ||
-			s[i] == "U"
-		) {
-			count++;
-			i++;
+let count = (str) => {
+	let vowels = "aeiouAEIOU";
+	let count = 0;
+
+	for (var i = 0; i < str.length; i++) {
+		if (vowels.indexOf(str[i]) !== -1) {
+			count += 1;
 		}
-		console.log(count);
 	}
+	console.log(count);
 };
-vowel("aae");
+count("aei is the");

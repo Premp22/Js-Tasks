@@ -1,6 +1,6 @@
 let add = (str) => {
 	if (str.length > 3) {
-		let first = str.substr(4, 3);
+		let first = str.substring(str.length - 3);
 		newStr = first + str + first;
 		console.log(newStr);
 	} else {
